@@ -25,6 +25,8 @@ namespace CarLotSimulator
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
+            Console.WriteLine($"Number of Cars in the lot: {CarLot._numberOfCars}");
+
             var carOne = new Car();
             carOne.Make = "Huayra";
             carOne.Model = "Pagani";
@@ -35,12 +37,15 @@ namespace CarLotSimulator
 
             carOne.MakeHonkNoise("Ouuugaaa!");
 
+            Console.WriteLine($"Number of Cars in the lot: {CarLot._numberOfCars}");
+
             var carTwo = new Car() {Make = "Ford", Model = "Fusion", IsDrivable = true, Year = 2019 };
 
             carTwo.MakeEngineNoise("Brrrruumm!");
 
             carTwo.MakeHonkNoise("Beep");
 
+            Console.WriteLine($"Number of Cars in the lot: {CarLot._numberOfCars}");
 
             var carThree = new Car("Hyundia", "Tucson", false, 2017);
 
@@ -48,6 +53,7 @@ namespace CarLotSimulator
 
             carThree.MakeEngineNoise("stutterysputter");
 
+            Console.WriteLine($"Number of Cars in the lot: {CarLot._numberOfCars}");
 
             //*************BONUS X 2*************//
 

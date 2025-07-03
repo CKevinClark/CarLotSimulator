@@ -37,11 +37,12 @@ namespace CarLotSimulator
 
         public Car()
         {
-
+            CarLot._numberOfCars++; 
         }
 
         public Car(string make, string model, bool isDrivable, int year)
         {
+            CarLot._numberOfCars++;
             Model = model;
             Make = make;
             IsDrivable = isDrivable;

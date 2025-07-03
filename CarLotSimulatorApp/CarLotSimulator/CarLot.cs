@@ -14,8 +14,11 @@ namespace CarLotSimulator
         {
             foreach (var vehicle in ParkingLot)
             {
-                Console.Write($"{vehicle.Make} {vehicle.Model} {vehicle.Year}");
+                Console.Write($"\n{vehicle.Make} {vehicle.Model} {vehicle.Year}");
             }
         }
+
+        public static int _numberOfCars = 0; 
+
     }
 }
